@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>购物散点图</title>
+		<style type="text/css">
+			body,div,ul{margin: 0;padding: 0;}
+			body,html{height:100%;overflow: hidden;}
+			body{background:#333;font-size:0.12rem;}
+			.yf_logo{position:absolute;left:0.6rem;top:0.35rem;z-index:99;width:10%;}
+			#main{width: 60%;height:100%;float:left;}
+			#right{width:40%;height:98%;float: right;padding-top:2%;}
+			.order_tit{color:#fff;margin-bottom:0.2rem;font-weight:bold;font-size:0.2rem;}
+			#scrollbox{height:50%;overflow: hidden;margin-bottom:3%;}
+			#ul>li {line-height: 0.24rem;width: 80%;background:#3f3e3e;font-size: 0.14rem;color:#fff;list-style-type: none;padding: 0.1rem;margin-bottom: 0.1rem;}
+			#ul>li>span{display: inline-block;width:0.75rem;}
+			#ul>li>i{display: inline-block;font-style:normal;width:1.1rem;}
+			#rightB{height:43%;margin-bottom:3%;margin-right:6%;}
+			.hint{position:absolute;left:0.2rem;bottom:0.2rem;color:#fff;}
+			#time{margin-left:0.08rem;}
+		</style>
+		<script src="js/echarts.min.js"></script>
+		<script src="js/china.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/yf_echarts.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+		   document.write("<s" + "cript type='text/javascript' src='js/yf_echarts.js?v=" + Math.random() + "'></s" + "cript>"); 
+		</script> 
+	</head>
+	<body>
+		<img src="img/yf_logo.png" class="yf_logo">
+    	<div id="main"></div>
+    	<div id="right">
+    		<div class="order_tit">药房网订单信息</div>
+    		<div id="scrollbox">
+				<ul id="ul"></ul>
+    		</div>
+    		<div id="rightB"></div>
+    	</div>
+    	<div class="hint">数据每5分钟更新一次（上次更新时间<span id="time"></span>）</div>
+	</body>
+</html>
